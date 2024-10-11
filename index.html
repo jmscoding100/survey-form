@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Indie or AAA?: Survey Form</title>
+ <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 id="title" > Indie or AAA?: Survey Form</h1>
+  <p id="description" >Do you prefer indie games or AAA games?</p>
+  <form id="survey-form">
+    <fieldset>
+    <label id="name-label" for="name">Name:<input id="name" name="name" type="text" placeholder="name here" required /></label>
+    <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="name@email.com" required /></label>
+    <label id="number-label" for="age">Age: <input id="number" name="age" type="number" min="1" max="200" placeholder="00" required /></lable>
+    </fieldset>
+    <fieldset>
+      <label>Do you like Indie games or AAA games?</label>
+      <select id="dropdown" name="options">
+        <option value=""></option>
+        <option value="1">Indie</option>
+        <option value="2">AAA</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Which do game system do you use?</legend>
+      <lable for="Console"><input id="Console" value="console" type="radio" name="game system" class="inline" /> Console</label>
+      <lable for="PC"><input id="PC" value="pc" type="radio" name="game system" class="inline" /> PC</label>
+      <lable for="Other"><input id="Other" value="other" type="radio" name="game system" class="inline" /> Other</label>
+    </fieldset>
+    <fieldset>
+      <legend>How often do you play? (Please select one)</legend>
+      <lable for="Very little"><input id="Very little" value="very litte" type="checkbox" name="playtime" class="input-checkbox" /> Very little</label>
+      <lable for="Sometime"><input id="Sometimes" value="sometimes" type="checkbox" name="playtime" class="input-checkbox" /> Sometimes</label>
+      <lable for="Often"><input id="Often" value="often" type="checkbox" name="playtime" class="input-checkbox" /> Often</label>
+      <lable for="Hours a day"><input id="Hours a day" value="hours a day" type="checkbox" name="playtime" class="input-checkbox" /> Hours a day</label>
+    </fieldset>
+    <label> Any comments
+    <textarea id="comments" class="input-textarea" name="comment" row="3" cols="30" placeholder="leave comments here..."></textarea></lable>
+    <button type="submit" id="submit" class="submit-button">Submit</button>
+  </form>
+</body>
